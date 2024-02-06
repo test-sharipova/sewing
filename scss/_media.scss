@@ -1,8 +1,11 @@
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1439px) {
     .menu {
         margin-left: 54px;
         gap: 24px;
     }
+}
+@media screen and (max-width:1023px) {
+    
     .promo {
         &__title {
             font-size: 36px;
