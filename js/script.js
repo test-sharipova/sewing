@@ -29,3 +29,50 @@ $('.promo__slider').slick({
         
       ]
 });
+
+$('.works__slider').slick({
+  slidesToShow: 4,
+  infinite: false,
+  responsive: [
+        
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        arrows: false,
+        
+        slidesToShow: 1,
+      }
+    }
+    
+  ]
+});
+
+$('.works__slider').magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  closeOnContentClick: false,
+  closeBtnInside: false,
+  mainClass: 'mfp-with-zoom mfp-img-mobile',
+  image: {
+    verticalFit: true,
+   
+  },
+  gallery: {
+    enabled: true
+  },
+  zoom: {
+    enabled: true,
+    duration: 300, // don't foget to change the duration also in CSS
+    opener: function(element) {
+      return element.find('img');
+    }
+  }
+  
+});

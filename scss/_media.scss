@@ -16,6 +16,19 @@
     }
 }
 @media screen and (max-width:767px) {
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+    .container_pr0 {
+        padding-right: 0;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .title2 {
+        font-size: 18px;
+    }
     .menu {
         position: fixed;
         flex-direction: column;
@@ -23,7 +36,7 @@
         top: 0;
         right: -100%;
         background: #fff;
-        padding: 0 24px 24px;
+        padding: 0 24px 60px;
         width: 100%;
         height: 100vh;
         transition: all .3s;
@@ -131,6 +144,26 @@
             }
             &:nth-child(4) {
                 background-position: right;
+            }
+        }
+    }
+    .works {
+        &__slider {
+            margin-top: 24px;
+           .slick-list {
+                padding: 0 20% 0 0;
+            }
+        }
+        &__wrapper {
+            overflow-x: scroll;
+        }
+        &__telegram {
+            padding: 24px;
+            &__text {
+                font-size: 16px;
+            }
+            &__link {
+                font-size: 20px;
             }
         }
     }
