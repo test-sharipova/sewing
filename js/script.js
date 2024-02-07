@@ -76,3 +76,70 @@ $('.works__slider').magnificPopup({
   }
   
 });
+
+//анимация
+function animation() {
+  gsap.registerPlugin(ScrollTrigger);
+
+   gsap.to('.promo__slide1', {
+     'background-position': '350px top',
+     scrollTrigger: {
+       start: 'top top',
+       end: '500px',
+       // markers: true,
+       scrub: true,
+     }
+   });
+
+    
+   gsap.from('.works__item', {
+    opacity: 0,
+    yPercent: 100,
+    stagger: 0.4,
+    scrollTrigger: {
+      trigger: '.works__wrapper',
+      start: '30% bottom', 
+     
+      toggleActions: 'play none none reverse',
+    }
+  });
+  gsap.from('.works__telegram__overlay', {
+ 
+   'width': '105%',
+   'right': '-2%',
+    scrollTrigger: {
+      trigger: '.works__telegram',
+      start: 'top 50%', 
+      
+      toggleActions: 'play none none reverse',
+    }
+  });
+  gsap.from('.about__img', {
+    'z-index': '10',
+    // 'transform': 'scale(1.3)',
+
+    stagger: 0.4,
+    scrollTrigger: {
+      trigger: '.works__telegram',
+      start: 'bottom top', 
+     
+      toggleActions: 'play none none reverse',
+    }
+  });
+  //  const tlImg = gsap.timeline({
+  //    scrollTrigger: {
+  //      trigger: '.main-about__images',
+  //      start: 'top top',
+  //      pin: true,
+  //      scrub: 1,
+  //    }
+  //  });
+  //  tlImg.to('.main-about__img:first-child img', {
+  //    scale: 1
+  //  });
+  //  tlImg.to('.main-about__img:last-child img', {
+  //    scale: 0
+  //  }, '<');
+  
+}
+animation();

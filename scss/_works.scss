@@ -55,6 +55,11 @@
             right: 52px;
             z-index: 2;
         }
+        &__wrap {
+            width: 100%;
+            overflow: visible;
+
+        }
     }
     &__wrapper {
         display: grid;
@@ -100,6 +105,16 @@
         background: url(../img/works-tg-bg.jpg) no-repeat center/cover;
         padding: 48px 48px 64px;
         margin-top: 64px;
+        position: relative;
+        &__overlay {
+            width: 0;
+            height: 105%;
+            position: absolute;
+            top: -2%;
+            right: 0;
+            background: #fff;
+
+        }
         &__text {
             
             font-size: 24px;

@@ -3,7 +3,13 @@
         margin-left: 54px;
         gap: 24px;
     }
+    .about {
+        &__images {
+            width: 50%;
+        }
+    }
 }
+
 @media screen and (max-width:1023px) {
     
     .promo {
@@ -16,6 +22,38 @@
         &__subtitle {
             max-width: 90%;
         }
+    }
+    .about {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__content {
+            width: 100%;
+            max-width: 100%;
+            order: 2;
+            .title {
+                display: none;
+               
+            }
+        }
+        .title {
+            &-mob {
+                display: block;
+            }
+        }
+        &__images {
+            width: 100%;
+            margin-top: 24px;
+            order: 1;
+            margin-bottom: 32px;
+        }
+        &__img {
+            &3 {
+                bottom: -20px;
+                right: 62px
+            }
+        }
+        
     }
 }
 @media screen and (max-width:767px) {
@@ -159,6 +197,13 @@
         }
         &__wrapper {
             overflow-x: scroll;
+            overflow-y: hidden;
+
+        }
+        &__item {
+            &__text {
+                font-size: 15px;
+            }
         }
         &__telegram {
             padding: 24px;
