@@ -13,7 +13,7 @@ menuItem.forEach(item => {
         menu.classList.toggle('menu_active');
     });
 });
-
+//promo slider
 $('.promo__slider').slick({
     infinite: false,
     
@@ -29,7 +29,7 @@ $('.promo__slider').slick({
         
       ]
 });
-
+//works slider
 $('.works__slider').slick({
   slidesToShow: 4,
   infinite: false,
@@ -53,7 +53,7 @@ $('.works__slider').slick({
     
   ]
 });
-
+//попапы наших работ
 $('.works__slider').magnificPopup({
   delegate: 'a',
   type: 'image',
@@ -92,10 +92,10 @@ function animation() {
   gsap.registerPlugin(ScrollTrigger);
 
    gsap.to('.promo__slide1', {
-     'background-position': '350px top',
+     'background-position': '0% 0%',
      scrollTrigger: {
        start: 'top top',
-       end: '1200px',
+       end: '500px',
        // markers: true,
        scrub: true,
      }
