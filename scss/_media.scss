@@ -243,10 +243,30 @@
             grid-template-columns: 1fr;
         }
         &__input {
-            height: 38px;
+            height: 50px;
         }
         .btn {
             font-weight: 400;
+            height: 50px;
+        }
+    }
+    .price {
+        padding: 56px 0 60px;
+        &__wrapper {
+            flex-direction: column;
+            margin-top: 32px;
+            padding: 24px 16px;
+        }
+        &__block {
+            width: 100%;
+            max-width: 100%;
+            &:nth-child(2) {
+                .price__item {
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
         }
     }
 }
