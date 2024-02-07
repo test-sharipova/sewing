@@ -77,6 +77,16 @@ $('.works__slider').magnificPopup({
   
 });
 
+//маска для телефона
+
+let element = document.querySelectorAll('.phone');
+let maskOptions = {
+    mask: '+7(000)000-00-00'
+};
+for (let i = 0; i < element.length; i++) {
+    let mask = IMask(element[i], maskOptions);
+}
+
 //анимация
 function animation() {
   gsap.registerPlugin(ScrollTrigger);
@@ -85,7 +95,7 @@ function animation() {
      'background-position': '350px top',
      scrollTrigger: {
        start: 'top top',
-       end: '500px',
+       end: '1200px',
        // markers: true,
        scrub: true,
      }
@@ -95,7 +105,7 @@ function animation() {
    gsap.from('.works__item', {
     opacity: 0,
     yPercent: 100,
-    stagger: 0.4,
+    stagger: 0.2,
     scrollTrigger: {
       trigger: '.works__wrapper',
       start: '30% bottom', 
@@ -109,19 +119,20 @@ function animation() {
    'right': '-2%',
     scrollTrigger: {
       trigger: '.works__telegram',
-      start: 'top 50%', 
+      start: 'top 70%', 
       
       toggleActions: 'play none none reverse',
     }
   });
   gsap.from('.about__img', {
-    'z-index': '10',
-    // 'transform': 'scale(1.3)',
+    opacity: 0,
+    yPercent: 100,
+    'transform': 'scale(1.4)',
 
     stagger: 0.4,
     scrollTrigger: {
       trigger: '.works__telegram',
-      start: 'bottom top', 
+      start: 'bottom 30%', 
      
       toggleActions: 'play none none reverse',
     }

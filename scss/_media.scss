@@ -215,4 +215,38 @@
             }
         }
     }
+    .process {
+        padding-top: 20px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            margin-top: 24px;
+        }
+        &__item {
+            padding: 16px;
+            grid-template-columns: 1fr 4fr;
+        }
+        &__num {
+            font-size: 32px;
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+    .form {
+        &__text {
+            font-size: 20px;
+        }
+        &__form {
+            grid-template-columns: 1fr;
+        }
+        &__input {
+            height: 38px;
+        }
+        .btn {
+            font-weight: 400;
+        }
+    }
 }
