@@ -55,6 +55,32 @@
         }
         
     }
+    .rew {
+        padding: 60px 0;
+        &__wrapper {
+            display: flex;
+            margin-top: 24px;
+            gap: 12px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+        }
+        &__item {
+            min-width: 230px;
+            scroll-snap-align: start;
+        }
+        &::-webkit-scrollbar {
+            height: 4px;
+            
+          }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+          }
+        &::-webkit-scrollbar-thumb {
+            background-color: #555555;
+            border-radius: 3px;
+          }
+    }
 }
 @media screen and (max-width:767px) {
     .container {
@@ -269,4 +295,5 @@
             }
         }
     }
+   
 }
