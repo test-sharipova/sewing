@@ -80,6 +80,13 @@
             background-color: #555555;
             border-radius: 3px;
           }
+       
+    }
+    .contacts {
+        &__wrapper {
+            flex-wrap: wrap;
+            row-gap: 24px;
+        }
     }
 }
 @media screen and (max-width:767px) {
@@ -295,5 +302,37 @@
             }
         }
     }
-   
+    .rew {
+        &__item {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .partners {
+        padding: 20px 0;
+        &__item {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .contacts {
+        padding: 20px 0;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__link {
+            font-size: 20px;
+        }
+        &__name {
+            font-size: 14px;
+        }
+        &__adress {
+            left: 50%;
+            transform: translateX(calc(-50% - 16px));
+            margin: 0 16px;
+            width: calc(100% - 32px);
+            max-width: 400px;
+        }
+    }
 }
