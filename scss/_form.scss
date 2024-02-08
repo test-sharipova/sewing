@@ -15,6 +15,10 @@
         border: 1px solid #ddd;
         padding: 48px;
         border-radius: 15px;
+        max-width: 440px;
+        .btn {
+            width: 100%;
+        }
     }
     &__input {
         &__wrap {
@@ -33,6 +37,7 @@
                 border: 1px solid #a0a0a0;
                 border-radius: 6px;
                 height: 38px;
+                width: 100%;
                 &:focus {
                     outline: 3px solid #ddd;
                 }
