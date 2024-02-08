@@ -46,6 +46,7 @@
             margin-top: 24px;
             order: 1;
             margin-bottom: 32px;
+            overflow: hidden;
         }
         &__img {
             &3 {
@@ -390,6 +391,6 @@
         width: 100%;
         border-radius: 0;
         height: 100vh;
-        
+
     }
 }
