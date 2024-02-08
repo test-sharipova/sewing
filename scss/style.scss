@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 @import '_vari.scss';
 body {
     font-family: 'Inter', sans-serif;
@@ -61,5 +64,6 @@ body {
 @import '_contacts.scss';
 @import '_form.scss';
 @import '_footer.scss';
+@import '_modal.scss';
 
 @import '_media.scss';

@@ -86,7 +86,13 @@ let maskOptions = {
 for (let i = 0; i < element.length; i++) {
     let mask = IMask(element[i], maskOptions);
 }
-
+//modal 
+$('.consult').on('click', function(){
+  $('.modal, .overlay').fadeIn();
+});
+$('.modal__close').on('click', function(){
+  $('.modal, .overlay, .thanks').fadeOut();
+});
 //анимация
 function animation() {
   gsap.registerPlugin(ScrollTrigger);
@@ -148,20 +154,7 @@ function animation() {
       toggleActions: 'play none none reverse',
     }
   });
-  //  const tlImg = gsap.timeline({
-  //    scrollTrigger: {
-  //      trigger: '.main-about__images',
-  //      start: 'top top',
-  //      pin: true,
-  //      scrub: 1,
-  //    }
-  //  });
-  //  tlImg.to('.main-about__img:first-child img', {
-  //    scale: 1
-  //  });
-  //  tlImg.to('.main-about__img:last-child img', {
-  //    scale: 0
-  //  }, '<');
+  
   
 }
 animation();

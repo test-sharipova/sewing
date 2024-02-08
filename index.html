@@ -35,16 +35,16 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Наши работы</a>
+                    <a href="#works" class="menu__link">Наши работы</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Прайс-лист</a>
+                    <a href="#price" class="menu__link">Прайс-лист</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Отзывы</a>
+                    <a href="#rew" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
+                    <a href="#cont" class="menu__link">Контакты</a>
                 </li>
                 <li class="mobile">
                     <a href="+70000000000" class="btn">+7 (000) 000 00 00</a>
@@ -70,7 +70,7 @@
                             <p class="promo__subtitle">
                                 От идеи до воплощения
                             </p>
-                            <button type="button" class="btn">Сделать заказ</button>
+                            <button type="button" class="btn consult">Сделать заказ</button>
                         </div>
                         <div class="promo__items">
                             <p class="promo__item">
@@ -143,7 +143,7 @@
             </div>
             
         </section>
-        <section class="works">
+        <section class="works" id="works">
             <div class="container container_pr0">
                 <h2 class="title">
                     Наши работы
@@ -224,7 +224,7 @@
                 </div>
             </div>
             <div class="container">
-                <button type="button" class="btn">Заказать звонок</button>
+                <button type="button" class="btn consult">Заказать звонок</button>
                 <div class="works__telegram">
                     <div class="works__telegram__overlay"></div>
                     <p class="works__telegram__text">
@@ -326,7 +326,7 @@
                 </form>
             </div>
         </section>
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
                 <h2 class="title">Прайс-лист</h2>
                 <div class="price__wrapper">
@@ -369,7 +369,7 @@
                 </div>
             </div>
         </section>
-        <section class="rew">
+        <section class="rew" id="rew">
             <div class="container container_pr0">
                 <h2 class="title">Отзывы</h2>
                 <div class="rew__wrapper">
@@ -438,7 +438,7 @@
                 </div>
            </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="cont">
             <div class="container">
                 <h2 class="title">Контакты</h2>
                 <div class="contacts__wrapper">
@@ -504,5 +504,31 @@
             </div>
         </div>
     </footer>
+    <!-- modal -->
+    <div class="overlay"></div>
+    <div class="modal">
+        <button class="modal__close" type="button"></button>
+        <p class="main-form__text">
+            Оставьте свои контакты, и мы свяжемся с Вами в ближайшее время
+        </p>
+        <form action="#" class="main-form__form">
+            <div class="main-form__input__wrap">
+                <input type="text" name="name">
+                <label>Введите имя</label>
+            </div>
+            <div class="main-form__input__wrap">
+                <input type="text" class="phone" value="+7" name="phone">
+                <label>Введите номер телефона</label>
+            </div>
+            <div class="main-form__input__wrap">
+                <input type="email" name="email">
+                <label>Введите e-mail</label>
+            </div>
+            <button type="submit" class="btn">Заказать звонок</button>
+        </form>
+    </div>
+    <div class="thanks">
+
+    </div>
 </body>
 </html>
