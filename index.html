@@ -320,7 +320,7 @@
                         Закажите обратный звонок и получите бесплатную консультацию!
                     </p>
                     <div class="form__form">
-                        <input type="text" class="form__input phone" value="+7" placeholder="+7" name="phone">
+                        <input type="text" class="form__input phone" value="+7" placeholder="+7" name="phone" required>
                         <button type="submit" class="btn">Оставить заявку</button>
                     </div>
                 </form>
@@ -476,11 +476,11 @@
                     </p>
                     <form action="#" class="main-form__form">
                         <div class="main-form__input__wrap">
-                            <input type="text" name="name">
+                            <input type="text" name="name" required>
                             <label>Введите имя</label>
                         </div>
                         <div class="main-form__input__wrap">
-                            <input type="text" class="phone" value="+7" name="phone">
+                            <input type="text" class="phone" value="+7" name="phone" required>
                             <label>Введите номер телефона</label>
                         </div>
                         <div class="main-form__input__wrap">
@@ -513,17 +513,18 @@
         </p>
         <form action="#" class="main-form__form">
             <div class="main-form__input__wrap">
-                <input type="text" name="name">
+                <input type="text" name="name" required>
                 <label>Введите имя</label>
             </div>
             <div class="main-form__input__wrap">
-                <input type="text" class="phone" value="+7" name="phone">
+                <input type="text" class="phone" value="+7" name="phone" required>
                 <label>Введите номер телефона</label>
             </div>
             <div class="main-form__input__wrap">
                 <input type="email" name="email">
                 <label>Введите e-mail</label>
             </div>
+            <textarea name="message" placeholder="Введите сообщение"></textarea>
             <button type="submit" class="btn">Заказать звонок</button>
         </form>
     </div>
