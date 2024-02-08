@@ -137,6 +137,17 @@ function animation() {
       toggleActions: 'play none none reverse',
     }
   });
+  gsap.from('.process__item', {
+    opacity: 0,
+    yPercent: 100,
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: '.process__wrapper',
+      start: '50% bottom', 
+     
+      toggleActions: 'play none none reverse',
+    }
+  });
   //  const tlImg = gsap.timeline({
   //    scrollTrigger: {
   //      trigger: '.main-about__images',

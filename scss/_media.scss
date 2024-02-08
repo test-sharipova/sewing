@@ -335,4 +335,35 @@
             max-width: 400px;
         }
     }
+    .main-form {
+        padding: 40px 0 60px;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__text {
+            max-width: 100%;
+            font-size: 20px;
+            text-align: center;
+            br {
+                display: none;
+            }
+        }
+        &-mobile {
+            display: none;
+        }
+        &__form {
+            input {
+                width: 100%;
+            }
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+    .footer__text {
+        font-size: 14px;
+    }
+    .policy {
+        font-size: 14px;
+    }
 }
