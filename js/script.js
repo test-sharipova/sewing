@@ -93,6 +93,12 @@ $('.consult').on('click', function(){
 $('.modal__close').on('click', function(){
   $('.modal, .overlay, .thanks').fadeOut();
 });
+
+//загрузить файл
+$('.myfile').change(function() {
+  if ($(this).val() != '') $(this).prev().text('Выбрано файлов: ' + $(this)[0].files.length);
+  else $(this).prev().text('Выберите файлы');
+});
 //анимация
 function animation() {
   gsap.registerPlugin(ScrollTrigger);

@@ -35,12 +35,13 @@
     .main-form__form {
         border:none;
         padding: 0px;
+        grid-template-columns: 1fr;
         input {
             width: 100%;
         }
         .btn {
             width: 100%;
-            margin-top: 32px;
+            margin-top: 8px;
         }
         textarea {
             width: 100%;

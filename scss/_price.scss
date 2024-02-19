@@ -3,17 +3,19 @@
     background: url(../img/price-bg.png) no-repeat center/cover;
     &__wrapper {
         padding: 48px 48px 60px;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 64px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 48px;
+        margin-top: 32px;
         border: 1px solid #ddd;
         border-radius: 16px;
         backdrop-filter: blur(40px);
         background: rgba(217, 217, 217, 0.1);
     }
-    &__block {
-        width: 45%;
-        max-width: 45%;
+    &__subtitle {
+        margin-top: 16px;
+        line-height: 160%;
+        font-size: 14px;
     }
     &__item {
         display: flex;
